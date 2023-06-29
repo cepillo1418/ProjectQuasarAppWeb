@@ -1,7 +1,7 @@
 <template>
     <q-layout>
-    <q-header  reveal elevated class="bg-cyan-8 " >
-        <q-toolbar-title class="text-center">CustomBridge</q-toolbar-title>
+    <q-header  reveal elevated class="bg-orange-8 " >
+        <q-toolbar-title class="text-center"><strong>Test de quasar FW</strong></q-toolbar-title>
     </q-header>
 
 
