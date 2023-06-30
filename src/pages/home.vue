@@ -1,5 +1,8 @@
 <template>
-    <h1>HOME</h1>
+
+   <h5 class="q-ml-md text-orange-8 " >Bienvenue chez Pizza de la Mama</h5>
+   
+
 </template>
 
 

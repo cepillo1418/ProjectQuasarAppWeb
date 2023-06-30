@@ -1,15 +1,15 @@
-#    Quasar App (quasar-project)
+#    Quasar App
 
-A Quasar Project
+Premier projet
 
-## Install the dependencies
+## Intaller les dependences 
 ```bash
 yarn
-# or
+# ou
 npm install
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+### Lancer le projet avec la commande ci dessous
 ```bash
 quasar dev
 ```
@@ -20,5 +20,4 @@ quasar dev
 quasar build
 ```
 
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js).
+

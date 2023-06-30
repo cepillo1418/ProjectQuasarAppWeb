@@ -1,7 +1,11 @@
 <template>
-        <h1>Page1</h1>
-              
-        <div style="width: 50%;" class="q-mx-auto text-center ">
+     <div class="q-mt-md row justify-center ">
+  <q-avatar rounded size="200px">
+      <img src="https://cdn.pixabay.com/photo/2022/06/07/14/15/food-7248455_1280.png">
+    </q-avatar>
+</div>
+
+<div style="width: 50%;" class="q-mx-auto text-center ">
     <q-card
       class="my-card bg-cyan-8"
      
@@ -16,27 +20,15 @@
       </q-card-section>
       </q-card>
 </div>
-
 </template>
 
-<script>
-import { defineComponent,ref  } from 'vue';
 
-import  mydata  from "src/data/mydata"
+<script>
+import { defineComponent } from "vue";
+
 
 export default defineComponent({
-    name : 'page1',
-   
-    setup () {
-    return {
-      slide: ref('first')
-    }
-  },
-    data (){
-         return {mydata}
-    }
-
-    
+    name: 'profil'
 })
 
 </script>
