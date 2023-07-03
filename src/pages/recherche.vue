@@ -1,0 +1,67 @@
+<template>
+            <q-btn-group class="float-right">
+           <q-input class="search" v-model="searchInput" label="decrivez votre RTC"></q-input> <q-btn icon="search" class="btn-search    "/>
+        </q-btn-group>
+        <q-btn-group class="float-left">
+           <q-input class="search" v-model="codeInput" label="Tapez votre nomenclature   "></q-input> 
+        </q-btn-group>
+        <div class="space"></div>
+
+       <div>
+        <q-card class=" card my-card q-gutter-md">
+      <q-card-section>
+         <q-title></q-title>
+      </q-card-section>
+    </q-card>
+</div>
+
+
+</template>
+
+<script>
+import { defineComponent } from "vue";
+
+
+  export default defineComponent({
+
+    name: 'recherche',
+
+    setup (){
+        return {
+            searchInput: null,
+            codeInput: null
+        }
+    }
+  })
+
+</script>
+
+<style>
+
+   .search{
+     float: right;
+     width: 95%;
+   }
+   .btn-search{
+    float: right;
+   }
+   .float-right{
+    float: right;
+    width: 50%;
+   }
+   .float-left{ 
+    float: left;
+    width: 49%;
+   }
+
+   .space{
+    margin-top: 100px;
+   }
+
+   .card{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+</style>
