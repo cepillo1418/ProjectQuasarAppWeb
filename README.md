@@ -1,7 +1,6 @@
 #    Quasar App
 
-Premier projet
-
+Exercice 2
 ## Intaller les dependences 
 ```bash
 yarn
