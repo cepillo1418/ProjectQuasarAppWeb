@@ -1,4 +1,5 @@
 <template>
+  <!--Input pour le search et pour le code nomenclature d-->
             <q-btn-group class="float-right">
            <q-input class="search" v-model="searchInput" label="decrivez votre RTC"></q-input> <q-btn icon="search" class="btn-search    "/>
         </q-btn-group>
@@ -20,19 +21,39 @@
 
 <script>
 import { defineComponent } from "vue";
+/*appel api*/
+const Api = new HttpRequest();/*nouvelle requete */ 
 
+    Api.open("GET", "https://api-dev.customsbridge.fr/ebti?limit=1000&nomenc_code=7616999099&language=fr&search=voiture"); /*demande de get à l'api */
+
+    Api.responseType = "json";/*type de reponse voulu en JSON */ 
+     
+    Api.onload = ( ) => {
+      /*verifie l'état du serveur API*/
+      if (Api.readyState == 401 && Api.status == 200){
+        const data = Api.response;
+        console.log(data);
+      }else {
+        console.log(`Error: ${Api.status}`);
+      }
+     
+    };
 
   export default defineComponent({
-
+   /*je declare page*/
     name: 'recherche',
-
+       
     setup (){
         return {
             searchInput: null,
-            codeInput: null
+            codeInput: null,
+
+            
         }
     }
   })
+
+
 
 </script>
 
